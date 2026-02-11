@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terminologies.tech | Clinical Data Architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">terminologies.tech</a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#ecosystem">Live Demos</a>
+                <a href="#contact" class="btn-nav">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Semantic Interoperability &<br>Clinical Data Standardization</h1>
+                <p class="hero-sub">Secure, on-premise deployment of semantic web technologies for Swiss Healthcare. Bridge local concepts to SNOMED CT, LOINC, and ICD-10.</p>
+                <div class="cta-group">
+                    <a href="mailto:your-email@terminologies.tech" class="btn btn-primary">Request Infrastructure Audit</a>
+                    <a href="#ecosystem" class="btn btn-secondary">View Live Demos</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="graph-node"></div>
+                <div class="graph-node"></div>
+                <div class="graph-node"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="problem">
+        <div class="container">
+            <div class="grid-3">
+                <div class="card-problem">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <h3>Fragmented Data</h3>
+                    <p>Reliance on inconsistent local catalogs (Orbis, Meona) makes cross-institutional research impossible.</p>
+                </div>
+                <div class="card-problem">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6" y2="6"></line><line x1="6" y1="18" x2="6" y2="18"></line></svg>
+                    </div>
+                    <h3>Interoperability Failure</h3>
+                    <p>Without FHIR/HL7 compliance and correct terminology mapping, data remains trapped in silos.</p>
+                </div>
+                <div class="card-problem">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h3>Manual Overhead</h3>
+                    <p>Manual coding is slow, error-prone, and unscalable for large datasets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Core Capabilities</h2>
+            
+            <div class="service-item">
+                <div class="service-text">
+                    <h3>01. Clinical Data Modeling (FHIR & openEHR)</h3>
+                    <p>End-to-end dual-stack implementation. We deploy <strong>Firely Vonk, Blaze, and HAPI</strong> for FHIR and <strong>Better ThinkEHR/EHRBase</strong> for openEHR.</p>
+                    <ul class="tech-list">
+                        <li>Profile & Archetype Design</li>
+                        <li>Synthetic Data Generation</li>
+                        <li>Privacy-Safe Validation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-text">
+                    <h3>02. In-House Terminology Server</h3>
+                    <p>Full deployment of <strong>CSIRO OntoServer</strong> within your firewall. Ensure zero external data leakage while maintaining high-performance lookups.</p>
+                    <ul class="tech-list">
+                        <li>SNOMED CT, LOINC, ICD-10</li>
+                        <li>Local-to-Global Mapping</li>
+                        <li>GraphDB/RDF Backends</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-text">
+                    <h3>03. ETL & Knowledge Graphs</h3>
+                    <p>Automated ingestion from HIS (Orbis, Meona) using custom KNIME/Python pipelines. Conversion of SQL data into Semantic Knowledge Graphs (RDF/OWL).</p>
+                    <ul class="tech-list">
+                        <li>Automated Cleaning</li>
+                        <li>Ontology Enrichment</li>
+                        <li>Clinical Data Lakes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ecosystem" class="ecosystem">
+        <div class="container">
+            <h2 class="section-title">Live Infrastructure</h2>
+            <div class="grid-3">
+                <a href="http://snomed.terminologies.tech" target="_blank" class="card-demo">
+                    <div class="status-indicator online"></div>
+                    <h3>SNOMED Browser</h3>
+                    <p class="url">snomed.terminologies.tech</p>
+                    <p>Fast, semantic traversal of clinical terms.</p>
+                </a>
+                <a href="http://loinc.terminologies.tech" target="_blank" class="card-demo">
+                    <div class="status-indicator online"></div>
+                    <h3>LOINC Browser</h3>
+                    <p class="url">loinc.terminologies.tech</p>
+                    <p>Laboratory observation mapping.</p>
+                </a>
+                <a href="http://forms.terminologies.tech" target="_blank" class="card-demo">
+                    <div class="status-indicator online"></div>
+                    <h3>Terminologies Form</h3>
+                    <p class="url">forms.terminologies.tech</p>
+                    <p>Structured data entry and validation.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Deploy Standardized Semantics.</h2>
+            <p>Bern, Switzerland</p>
+            <a href="mailto:your-email@terminologies.tech" class="btn btn-footer">Contact via Email</a>
+            <div class="copy">
+                &copy; 2024 terminologies.tech. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
